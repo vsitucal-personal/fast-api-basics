@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  fast-api-basics:
+    volumes:
+      - .:/code/fast-api-basics:rw
+    build:
+      context: .
+    container_name: fast-api-basics
+    ports:
+      - "5000:5000"
+    expose:
+      - 5000
